@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>+ Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-white border-b px-6 py-4">
+
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+
+    <div class="font-bold text-xl">+ Project</div>
+
+    <ul class="hidden md:flex gap-6 text-gray-600">
+      <li>Product</li>
+      <li>Solutions</li>
+      <li>Pricing</li>
+      <li>Log in</li>
+    </ul>
+
+    <button class="bg-black text-white px-4 py-2 rounded-full">
+      Get AI free
+    </button>
+
+  </div>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="min-h-screen bg-gradient-to-b from-orange-100 to-white flex items-center px-6">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT -->
+    <div>
+
+      <h1 class="text-5xl font-bold">
+        Write, plan, ship faster.<br>
+        <span class="text-orange-500">with AI assistance.</span>
+      </h1>
+
+      <!-- REAL product description (required fix) -->
+      <p class="text-gray-600 mt-5">
+        + Project helps you organize tasks, track progress, and collaborate with your team.
+        It uses AI suggestions to reduce manual work and improve productivity.
+      </p>
+
+      <!-- CTA (must demonstrate relative/absolute properly) -->
+      <div class="relative mt-6 w-fit">
+
+        <button class="bg-orange-500 text-white px-6 py-3 rounded-full relative z-20">
+          Get AI free
+        </button>
+
+        <button class="bg-white border px-6 py-3 rounded-full absolute left-full ml-3 top-0 z-10">
+          Request demo
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT DASHBOARD -->
+    <div class="relative">
+
+      <!-- MAIN DASHBOARD IMAGE -->
+      <div class="bg-white border shadow-lg rounded-2xl p-3 relative z-10">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+        class="rounded-xl">
+      </div>
+
+      <!-- FLOATING CARD 1 (Tasks + icon required) -->
+      <div class="absolute -top-6 -left-6 bg-white border shadow p-3 rounded-xl z-30">
+        <div class="flex items-center gap-2">
+          <span>📝</span>
+          <p class="text-xs text-gray-500">Tasks</p>
+        </div>
+        <p class="font-semibold mt-1">12 completed today</p>
+      </div>
+
+      <!-- FLOATING CARD 2 (Project Status + icon required) -->
+      <div class="absolute -bottom-6 -right-6 bg-white border shadow p-3 rounded-xl z-20">
+        <div class="flex items-center gap-2">
+          <span>📊</span>
+          <p class="text-xs text-gray-500">Project Status</p>
+        </div>
+        <p class="font-semibold mt-1">On Track</p>
+      </div>
+
+      <!-- FLOATING CARD 3 (Team Activity + avatars required) -->
+      <div class="absolute top-1/2 right-0 bg-white border shadow p-3 rounded-xl z-40">
+
+        <div class="flex items-center gap-2">
+          <span>👥</span>
+          <p class="text-xs text-gray-500">Team</p>
+        </div>
+
+        <!-- fake user avatars -->
+        <div class="flex -space-x-2 mt-2">
+          <img class="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=1">
+          <img class="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=2">
+          <img class="w-6 h-6 rounded-full border" src="https://i.pravatar.cc/30?img=3">
+        </div>
+
+        <p class="text-sm mt-2 font-semibold">+5 online</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CHAT WIDGET -->
+<div class="fixed bottom-6 right-6 z-50">
+  <button class="bg-black text-white px-4 py-3 rounded-full">
+    💬
+  </button>
+</div>
+
+</body>
+</html>
